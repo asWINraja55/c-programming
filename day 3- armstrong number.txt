@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main () {
+    int n,scan = 0,t,r;
+    printf("Enter a number : ");
+    scanf("%d",&n);
+    t=n;
+    while(t){
+        r=t%10;
+        scan=r*r*r;
+        t /= 10;
+    }
+    if(scan == n)
+    printf("armstrong number");
+    else
+    printf("not on armstrong number");
+    return 0;
+}
