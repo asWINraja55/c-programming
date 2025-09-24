@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d,e;
+    int choice ,sum,max;
+    printf("Enter 5 numbers:\n");
+    scanf("%d,%d,%d,%d,%d",&a,&b,&c,&d,&e);
+    printf("\nchoose an option:\n");
+    printf("1.display all numbers\n");
+    printf("2.find sum of numbers\n");
+    printf("3.find maximum numbers\n");
+    printf("4.exit\n");
+    scanf("%d",&choice);
+    switch(choice){
+        case 1:
+        printf("\n numbers are:%d %d %d %d %d\n",a,b,c,d,e);
+        break;
+        case 2:
+        sum = a+b+c+d+e;
+        printf("\n sum = %d\n",sum);
+        break;
+        case 3:
+        max = a;
+        if(b>max) max=b;
+        if(c>max) max=c;
+        if(d>max) max=d;
+        if(e>max) max=e;
+        printf("\n maximum = %d\n",max);
+        break;
+        case 4:
+        printf("\n exiting program...\n");
+    }
+}
